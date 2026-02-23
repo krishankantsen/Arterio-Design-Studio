@@ -22,6 +22,16 @@ const contactSchema = z.object({
   message: z.string().min(10),
 });
 
+// respond to OPTIONS (CORS preflight) and other methods gracefully
+export function OPTIONS() {
+  // allow any origin or restrict as needed
+  return new NextResponse(null, { status: 200 });
+}
+
+export function GET() {
+  return NextResponse.json({ error: 'Method not allowed' }, { status: 405 });
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
