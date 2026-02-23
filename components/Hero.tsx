@@ -95,15 +95,6 @@ export default function Hero({ images }: HeroProps) {
             </Link>
           </div>
         </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.8, delay: 1 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
-        >
-          <ArrowDown className="animate-bounce text-white" size={32} />
-        </motion.div>
       </div>
     </section>
   );
