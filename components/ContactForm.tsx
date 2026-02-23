@@ -11,7 +11,6 @@ const contactSchema = z.object({
   email: z.string().email('Please enter a valid email address'),
   phone: z.string().min(10, 'Please enter a valid phone number'),
   projectType: z.string().min(1, 'Please select a project type'),
-  budget: z.string().min(1, 'Please select a budget range'),
   message: z.string().min(10, 'Message must be at least 10 characters'),
 });
 
