@@ -48,9 +48,6 @@ export default function Services() {
                     className="object-cover"
                   />
                 </div>
-                <div className="mb-2">
-                  <service.icon className="h-12 w-12 text-amber-600 group-hover:text-amber-700 transition-colors duration-200" />
-                </div>
                 <h3 className="text-2xl font-semibold mb-4 text-gray-900">
                   {service.title}
                 </h3>

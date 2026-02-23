@@ -1,8 +1,8 @@
-import { Home, Palette, Layout, Lightbulb, Sofa, Building2 } from 'lucide-react';
+import { Home, Palette, Layout, Lightbulb, Sofa, Building2 ,type LucideIcon} from 'lucide-react';
 
 export interface Service {
   slug: string;
-  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  icon: LucideIcon;
   title: string;
   description: string;
   features: string[];
