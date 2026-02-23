@@ -6,7 +6,7 @@ import { z } from 'zod';
 const transporter = nodemailer.createTransport({
   host: process.env.EMAIL_HOST,
   port: 587,
-  secure: true, // true for 465, false for other ports
+  secure: false, // true for 465, false for other ports
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS,
@@ -18,7 +18,6 @@ const contactSchema = z.object({
   email: z.string().email(),
   phone: z.string().min(10),
   projectType: z.string().min(1),
-  budget: z.string().min(1),
   message: z.string().min(10),
 });
 
@@ -37,7 +36,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const validatedData = contactSchema.parse(body);
 
-    const { name, email, phone, projectType, budget, message } = validatedData;
+    const { name, email, phone, projectType, message } = validatedData;
 
     // build html body for email
     const htmlBody = `
@@ -54,7 +53,6 @@ export async function POST(request: NextRequest) {
         <div style="background-color: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
           <h3 style="margin-top: 0; color: #333;">Project Details</h3>
           <p><strong>Project Type:</strong> ${projectType}</p>
-          <p><strong>Budget Range:</strong> ${budget}</p>
           <p><strong>Message:</strong></p>
           <p style="white-space: pre-line;">${message}</p>
         </div>
