@@ -7,21 +7,21 @@ import Image from 'next/image';
 const portfolioItems = [
   {
     id: 1,
-    title: 'Modern Living Room',
-    category: 'Residential',
-    image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg',
+    title: 'BIM Modeling',
+    category: 'Commercial',
+    image: 'https://skylarkconstructions.com/wp-content/uploads/2020/07/bim-e1643953135631.jpg',
   },
   {
     id: 2,
-    title: 'Luxury Bedroom Suite',
-    category: 'Residential',
-    image: 'https://images.pexels.com/photos/1743227/pexels-photo-1743227.jpeg',
+    title: 'Scan To Bim Modeling',
+    category: 'Commercial',
+    image: 'https://blog.novatr.com/hs-fs/hubfs/bim-scan.jpg?width=1602&height=856&name=bim-scan.jpg',
   },
   {
     id: 3,
-    title: 'Contemporary Kitchen',
-    category: 'Residential',
-    image: 'https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg',
+    title: 'Revit Modeling',
+    category: 'Commercial',
+    image: 'https://www.elogictech.com/blog/wp-content/uploads/2025/05/1715863607_BIMRevit.jpg',
   },
   {
     id: 4,

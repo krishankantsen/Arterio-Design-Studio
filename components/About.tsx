@@ -6,10 +6,9 @@ import { Award, Users, Clock, Star } from 'lucide-react';
 import Image from 'next/image';
 
 const stats = [
-  { icon: Users, label: 'Happy Clients', value: '200+' },
-  { icon: Clock, label: 'Years Experience', value: '8+' },
-  { icon: Award, label: 'Awards Won', value: '15+' },
-  { icon: Star, label: 'Projects Completed', value: '300+' },
+
+  { icon: Clock, label: 'Years Experience', value: '4+' },
+  { icon: Star, label: 'Projects Completed', value: '50+' },
 ];
 
 export default function About() {
@@ -31,7 +30,7 @@ export default function About() {
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               Founded with a passion for creating beautiful, functional spaces,
               Arterio Design Studio has been transforming homes and commercial
-              spaces for over 8 years. We believe that great design has the
+              spaces for over 4 years. We believe that great design has the
               power to improve lives and create lasting memories.
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">

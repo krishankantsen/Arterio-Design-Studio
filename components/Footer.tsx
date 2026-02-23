@@ -18,16 +18,10 @@ export default function Footer() {
               and reflect your unique personality.
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-gray-400 hover:text-amber-600 transition-colors">
-                <Facebook size={24} />
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-amber-600 transition-colors">
+              <Link href="https://www.instagram.com/arterio_design_studio" className="text-gray-400 hover:text-amber-600 transition-colors">
                 <Instagram size={24} />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-amber-600 transition-colors">
-                <Twitter size={24} />
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-amber-600 transition-colors">
+              <Link href="https://www.linkedin.com/company/arteriodesignstudio/" className="text-gray-400 hover:text-amber-600 transition-colors">
                 <Linkedin size={24} />
               </Link>
             </div>
@@ -76,16 +70,16 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-amber-600 mt-1 flex-shrink-0" />
                 <span className="text-gray-400">
-                  123 Design Street, Creative City, CC 12345
+                  Vijay Nagar, Indore, India
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-amber-600" />
-                <span className="text-gray-400">+1 (555) 123-4567</span>
+                <span className="text-gray-400">+91 8085193131</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-amber-600" />
-                <span className="text-gray-400">hello@arteriodesign.com</span>
+                <span className="text-gray-400">dshivam111213@gmail.com</span>
               </div>
             </div>
           </div>

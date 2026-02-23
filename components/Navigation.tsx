@@ -26,11 +26,7 @@ export default function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-white/90 backdrop-blur-md shadow-lg'
-          : 'bg-transparent'
-      }`}
+      className="fixed top-0 w-full z-50 transition-all duration-300 bg-white border-b-2 border-black border-solid shadow-lg"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -47,7 +43,7 @@ export default function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-gray-700 hover:text-amber-600 transition-colors duration-200 font-medium"
+                className="text-gray-900 hover:text-amber-600 transition-colors duration-200 font-medium"
               >
                 {item.label}
               </Link>
@@ -56,7 +52,7 @@ export default function Navigation() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-gray-700 hover:text-amber-600"
+            className="md:hidden text-gray-900 hover:text-amber-600"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}

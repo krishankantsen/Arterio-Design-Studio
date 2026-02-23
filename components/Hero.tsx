@@ -4,27 +4,58 @@ import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import { ArrowDown } from 'lucide-react';
 import Link from 'next/link';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from './ui/carousel'; // adjust path if necessary
 
-export default function Hero() {
+
+interface HeroProps {
+  /** image URLs; if not provided, placeholder images will be used */
+  images?: string[];
+}
+
+export default function Hero({ images }: HeroProps) {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
+
+  const defaultImages = [
+    'https://images.pexels.com/photos/5583620/pexels-photo-5583620.jpeg',
+    'https://images.pexels.com/photos/5583620/pexels-photo-5583620.jpeg',
+    'https://images.pexels.com/photos/5583620/pexels-photo-5583620.jpeg',
+    'https://images.pexels.com/photos/5583620/pexels-photo-5583620.jpeg',
+  ];
+
+  const carouselImages = images && images.length >= 4 ? images.slice(0, 4) : defaultImages;
+
 
   return (
     <section
       id="home"
       ref={ref}
-      className="min-h-screen flex items-center justify-center bg-gradient-warm relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden border-solid"
     >
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed',
-        }}
-      />
+      {/* Carousel / Background */}
+      <div className="absolute inset-0 z-0 h-full w-full">
+        <Carousel opts={{ loop: true }} className="h-full w-full">
+          <CarouselContent>
+            {carouselImages.map((src, idx) => (
+              <CarouselItem key={idx}>
+                <div
+                  className="h-full w-full bg-cover bg-center"
+                  style={{ backgroundImage: `url('${src}')` }}
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="text-white bg-black/30 hover:bg-black/50 left-4 z-10" />
+          <CarouselNext className="text-white bg-black/30 hover:bg-black/50 right-4 z-10" />
+        </Carousel>
+        {/* overlay was hiding dark images; make transparent or remove entirely */}
+        {/* <div className="absolute inset-0 bg-transparent" /> */}
+      </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
         <motion.div

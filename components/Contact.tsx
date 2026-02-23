@@ -9,19 +9,19 @@ const contactInfo = [
   {
     icon: Phone,
     title: 'Phone',
-    info: '+1 (555) 123-4567',
-    link: 'tel:+15551234567',
+    info: '+91 8085193131',
+    link: 'tel:+918085193131',
   },
   {
     icon: Mail,
     title: 'Email',
-    info: 'hello@arteriodesign.com',
-    link: 'mailto:hello@arteriodesign.com',
+    info: 'dshivam111213@gmail.com',
+    link: 'mailto:dshivam111213@gmail.com',
   },
   {
     icon: MapPin,
     title: 'Address',
-    info: '123 Design Street, Creative City, CC 12345',
+    info: 'Vijay Nagar, Indore, India',
     link: '#',
   },
   {
@@ -78,16 +78,6 @@ export default function Contact() {
                   </div>
                 </div>
               ))}
-            </div>
-
-            <div className="mt-8 p-6 bg-amber-50 rounded-lg">
-              <h4 className="font-semibold text-gray-900 mb-2">
-                Free Consultation Available
-              </h4>
-              <p className="text-gray-600">
-                Schedule a complimentary consultation to discuss your project
-                and explore design possibilities for your space.
-              </p>
             </div>
           </motion.div>
 

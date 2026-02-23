@@ -120,14 +120,14 @@ export default function ContactForm() {
             id="phone"
             {...register('phone')}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent"
-            placeholder="(555) 123-4567"
+            placeholder="Enter Phone"
           />
           {errors.phone && (
             <p className="mt-1 text-sm text-red-600">{errors.phone.message}</p>
           )}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 gap-6">
           <div>
             <label htmlFor="projectType" className="block text-sm font-medium text-gray-700 mb-2">
               Project Type *
@@ -145,27 +145,6 @@ export default function ContactForm() {
             </select>
             {errors.projectType && (
               <p className="mt-1 text-sm text-red-600">{errors.projectType.message}</p>
-            )}
-          </div>
-
-          <div>
-            <label htmlFor="budget" className="block text-sm font-medium text-gray-700 mb-2">
-              Budget Range *
-            </label>
-            <select
-              id="budget"
-              {...register('budget')}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent"
-            >
-              <option value="">Select budget range</option>
-              <option value="under-10k">Under $10,000</option>
-              <option value="10k-25k">$10,000 - $25,000</option>
-              <option value="25k-50k">$25,000 - $50,000</option>
-              <option value="50k-100k">$50,000 - $100,000</option>
-              <option value="over-100k">Over $100,000</option>
-            </select>
-            {errors.budget && (
-              <p className="mt-1 text-sm text-red-600">{errors.budget.message}</p>
             )}
           </div>
         </div>
