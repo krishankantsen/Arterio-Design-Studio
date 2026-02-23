@@ -1,3 +1,6 @@
+export const dynamic = 'force-dynamic';
+// you can also export `runtime = 'edge'` if needed, but default nodejs works here
+
 import nodemailer from 'nodemailer';
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
@@ -32,6 +35,8 @@ export function GET() {
 }
 
 export async function POST(request: NextRequest) {
+  console.log('contact API invoked with method', request.method);
+
   try {
     const body = await request.json();
     const validatedData = contactSchema.parse(body);
@@ -85,7 +90,7 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error('Error processing contact form:', error);
     return NextResponse.json(
-      { error: 'Failed to process contact form' },
+      { error: 'Failed to process contact form', details: (error as Error).message },
       { status: 500 }
     );
   }
