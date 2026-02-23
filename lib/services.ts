@@ -66,7 +66,7 @@ export const services: Service[] = [
       'Ergonomic Planning',
     ],
     image:
-      'https://images.pexels.com/photos/3807693/pexels-photo-3807693.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      'https://redress.co.za/wp-content/uploads/2019/03/spaceplanning.jpg',
   },
 
   {
@@ -120,6 +120,6 @@ export const services: Service[] = [
       'Energy Efficient Planning',
     ],
     image:
-      'https://images.pexels.com/photos/1297315/pexels-photo-1297315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      'https://media.designcafe.com/wp-content/uploads/2019/11/17054916/latest-designs-for-boutique-lighting-1.jpg',
   },
 ];
