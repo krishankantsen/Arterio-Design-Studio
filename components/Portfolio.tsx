@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import { portfolioItems } from '@/lib/services';
 
-const AUTO_SLIDE_INTERVAL = 4000; // 4 seconds
+const AUTO_SLIDE_INTERVAL = 1000; // 4 seconds
 
 export default function Portfolio() {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
@@ -111,16 +111,33 @@ export default function Portfolio() {
                 }
               }}
             >
-              <div className="relative overflow-hidden rounded-lg shadow-lg">
-                <div className="relative h-64">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                </div>
-              </div>
+              <div className="relative overflow-hidden rounded-lg bg-white shadow-lg"> 
+                <div className="aspect-w-4 aspect-h-3 relative h-64">
+                   <Image src={item.image} alt={item.title} fill className="object-cover transition-transform duration-300 group-hover:scale-110" /> 
+                   <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center"> 
+                    <div className="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"> 
+                      <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                      <button
+                          type="submit"
+                          className="
+                            w-full
+                            border border-amber-600
+                            text-amber-600
+                            bg-white
+                            hover:bg-amber-50
+                            disabled:border-gray-300 disabled:text-gray-400 disabled:bg-white
+                            font-semibold py-3 px-6
+                            rounded-lg
+                            transition-colors duration-200
+                            flex items-center justify-center space-x-2
+                          "
+                        >
+                          View Projects →
+                        </button>
+                        </div> 
+                        </div> 
+                        </div>
+                         </div>
             </motion.div>
           ))}
         </div>
