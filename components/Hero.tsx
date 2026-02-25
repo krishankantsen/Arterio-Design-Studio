@@ -26,8 +26,7 @@ export default function Hero({ images }: HeroProps) {
     'https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg',
   ];
 
-  const carouselImages =
-    images && images.length >= 4 ? images.slice(0, 4) : defaultImages;
+  const carouselImages = images;
 
   return (
     <section
