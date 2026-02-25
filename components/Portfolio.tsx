@@ -41,8 +41,9 @@ export default function Portfolio() {
               transition={{ duration: 0.8, delay: index * 0.1 }}
               className="group cursor-pointer hover-lift"
               onClick={() => {
+                if(item?.images && item.images.length > 0) { 
                 setGalleryImages(item?.images as string[]);
-                openModal();
+                openModal();}
               }}
             >
               <div className="relative overflow-hidden rounded-lg bg-white shadow-lg">
