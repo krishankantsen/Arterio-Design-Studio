@@ -1,50 +1,16 @@
 'use client';
 
+import { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-
-const portfolioItems = [
-  {
-    id: 1,
-    title: 'BIM Modeling',
-    category: 'Commercial',
-    image: 'https://skylarkconstructions.com/wp-content/uploads/2020/07/bim-e1643953135631.jpg',
-  },
-  {
-    id: 2,
-    title: 'Scan To Bim Modeling',
-    category: 'Commercial',
-    image: 'https://blog.novatr.com/hs-fs/hubfs/bim-scan.jpg?width=1602&height=856&name=bim-scan.jpg',
-  },
-  {
-    id: 3,
-    title: 'Revit Modeling',
-    category: 'Commercial',
-    image: 'https://www.elogictech.com/blog/wp-content/uploads/2025/05/1715863607_BIMRevit.jpg',
-  },
-  {
-    id: 4,
-    title: 'Executive Office',
-    category: 'Commercial',
-    image: 'https://images.pexels.com/photos/1957477/pexels-photo-1957477.jpeg',
-  },
-  {
-    id: 5,
-    title: 'Boutique Hotel Lobby',
-    category: 'Commercial',
-    image: 'https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg',
-  },
-  {
-    id: 6,
-    title: 'Scandinavian Dining',
-    category: 'Residential',
-    image: 'https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg',
-  },
-];
-
+import { portfolioItems } from '@/lib/services';
 export default function Portfolio() {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
+  const [showModal, setShowModal] = useState(false);
+  const [galleryImages, setGalleryImages] = useState<string[]>([]);
+  const openModal = () => setShowModal(true);
+  const closeModal = () => setShowModal(false);
 
   return (
     <section id="portfolio" className="section-padding bg-white">
@@ -65,6 +31,7 @@ export default function Portfolio() {
           </p>
         </motion.div>
 
+        {/* clicking any item opens modal with full gallery */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {portfolioItems.map((item, index) => (
             <motion.div
@@ -73,6 +40,10 @@ export default function Portfolio() {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: index * 0.1 }}
               className="group cursor-pointer hover-lift"
+              onClick={() => {
+                setGalleryImages(item?.images as string[]);
+                openModal();
+              }}
             >
               <div className="relative overflow-hidden rounded-lg bg-white shadow-lg">
                 <div className="aspect-w-4 aspect-h-3 relative h-64">
@@ -94,6 +65,36 @@ export default function Portfolio() {
           ))}
         </div>
       </div>
+
+      {/* modal overlay */}
+      {showModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70">
+          <div className="relative w-full max-w-4xl max-h-full overflow-y-auto bg-white rounded-lg p-6">
+            <button
+              className="absolute top-4 right-4 text-gray-800 hover:text-gray-600"
+              onClick={closeModal}
+              aria-label="Close gallery"
+            >
+              &#10005;
+            </button>
+            <h3 className="text-2xl font-semibold mb-4 text-center">
+              Portfolio Gallery
+            </h3>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+              {galleryImages.map((img,index) => (
+                <div key={index} className="aspect-w-4 aspect-h-3 relative">
+                  <Image
+                    src={img}
+                    alt={`Gallery Image ${index + 1}`}
+                    fill
+                    className="object-cover rounded"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

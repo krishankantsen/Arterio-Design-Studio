@@ -123,3 +123,67 @@ export const services: Service[] = [
       'https://media.designcafe.com/wp-content/uploads/2019/11/17054916/latest-designs-for-boutique-lighting-1.jpg',
   },
 ];
+
+
+export const portfolioItems = [
+  {
+    id: 1,
+    title: 'BIM Modeling',
+    category: 'Commercial',
+    image: 'https://skylarkconstructions.com/wp-content/uploads/2020/07/bim-e1643953135631.jpg',
+  },
+  {
+    id: 2,
+    title: 'Scan To Bim Modeling',
+    category: 'Commercial',
+    image: 'https://blog.novatr.com/hs-fs/hubfs/bim-scan.jpg?width=1602&height=856&name=bim-scan.jpg',
+  },
+  {
+    id: 3,
+    title: 'Revit Modeling',
+    category: 'Commercial',
+    image: 'https://www.elogictech.com/blog/wp-content/uploads/2025/05/1715863607_BIMRevit.jpg',
+  },
+  {
+    id: 4,
+    title: 'Executive Office',
+    category: 'Commercial',
+    image: 'https://images.pexels.com/photos/1957477/pexels-photo-1957477.jpeg',
+  },
+  {
+    id: 5,
+    title: 'Boutique Hotel Lobby',
+    category: 'Commercial',
+    image: 'https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg',
+  },
+  {
+    id: 6,
+    title: 'Scandinavian Dining',
+    category: 'Residential',
+    image: 'https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg',
+    images:[
+  "https://national-violet-7axueixyp0.edgeone.app/WhatsApp%20Image%202026-02-25%20at%208.37.51%20PM%20(1).jpeg",
+  "https://national-violet-7axueixyp0.edgeone.app/WhatsApp%20Image%202026-02-25%20at%208.37.51%20PM.jpeg",
+  "https://national-violet-7axueixyp0.edgeone.app/WhatsApp%20Image%202026-02-25%20at%208.37.53%20PM.jpeg",
+  "https://national-violet-7axueixyp0.edgeone.app/WhatsApp%20Image%202026-02-25%20at%208.38.09%20PM.jpeg",
+  "https://national-violet-7axueixyp0.edgeone.app/WhatsApp%20Image%202026-02-25%20at%208.38.10%20PM%20(1).jpeg",
+  "https://national-violet-7axueixyp0.edgeone.app/WhatsApp%20Image%202026-02-25%20at%208.38.10%20PM.jpeg",
+  "https://national-violet-7axueixyp0.edgeone.app/WhatsApp%20Image%202026-02-25%20at%208.38.19%20PM.jpeg",
+  "https://national-violet-7axueixyp0.edgeone.app/WhatsApp%20Image%202026-02-25%20at%208.38.20%20PM%20(1).jpeg",
+  "https://national-violet-7axueixyp0.edgeone.app/WhatsApp%20Image%202026-02-25%20at%208.38.20%20PM%20(2).jpeg",
+  "https://national-violet-7axueixyp0.edgeone.app/WhatsApp%20Image%202026-02-25%20at%208.38.20%20PM.jpeg",
+  "https://national-violet-7axueixyp0.edgeone.app/WhatsApp%20Image%202026-02-25%20at%208.38.21%20PM%20(1).jpeg",
+  "https://national-violet-7axueixyp0.edgeone.app/WhatsApp%20Image%202026-02-25%20at%208.38.21%20PM%20(2).jpeg",
+  "https://national-violet-7axueixyp0.edgeone.app/WhatsApp%20Image%202026-02-25%20at%208.38.21%20PM%20(3).jpeg",
+  "https://national-violet-7axueixyp0.edgeone.app/WhatsApp%20Image%202026-02-25%20at%208.38.21%20PM%20(4).jpeg",
+  "https://national-violet-7axueixyp0.edgeone.app/WhatsApp%20Image%202026-02-25%20at%208.38.21%20PM%20(5).jpeg",
+  "https://national-violet-7axueixyp0.edgeone.app/WhatsApp%20Image%202026-02-25%20at%208.38.21%20PM.jpeg",
+  "https://national-violet-7axueixyp0.edgeone.app/WhatsApp%20Image%202026-02-25%20at%208.38.22%20PM%20(1).jpeg",
+  "https://national-violet-7axueixyp0.edgeone.app/WhatsApp%20Image%202026-02-25%20at%208.38.22%20PM%20(2).jpeg",
+  "https://national-violet-7axueixyp0.edgeone.app/WhatsApp%20Image%202026-02-25%20at%208.38.22%20PM%20(3).jpeg",
+  "https://national-violet-7axueixyp0.edgeone.app/WhatsApp%20Image%202026-02-25%20at%208.38.22%20PM%20(4).jpeg",
+  "https://national-violet-7axueixyp0.edgeone.app/WhatsApp%20Image%202026-02-25%20at%208.38.22%20PM.jpeg",
+  "https://national-violet-7axueixyp0.edgeone.app/WhatsApp%20Image%202026-02-25%20at%208.38.23%20PM.jpeg"
+]
+  },
+]
