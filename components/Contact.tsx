@@ -27,7 +27,7 @@ const contactInfo = [
   {
     icon: Clock,
     title: 'Business Hours',
-    info: 'Mon - Fri: 9AM - 6PM',
+    info: 'Mon - Fri: 10AM - 8PM',
     link: '#',
   },
 ];
