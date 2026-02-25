@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
 
 export default function Navigation() {
@@ -32,9 +33,19 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <Link
             href="/"
-            className="text-2xl font-bold text-gradient"
+            className="flex items-center space-x-2"
           >
-            Arterio Bim Solution
+            {/* logo - replace src with your own link when available */}
+            <Image
+              src="https://unwilling-pink-00ojoqc6b6.edgeone.app/crioped.png"
+              alt="Logo"
+              width={40}
+              height={40}
+              className="object-contain"
+            />
+            <span className="text-2xl font-bold text-gradient">
+              Arterio Bim Solution
+            </span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -117,23 +117,9 @@ export default function Portfolio() {
                    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center"> 
                     <div className="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"> 
                       <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                      <button
-                          type="submit"
-                          className="
-                            w-full
-                            border border-amber-600
-                            text-amber-600
-                            bg-white
-                            hover:bg-amber-50
-                            disabled:border-gray-300 disabled:text-gray-400 disabled:bg-white
-                            font-semibold py-3 px-6
-                            rounded-lg
-                            transition-colors duration-200
-                            flex items-center justify-center space-x-2
-                          "
-                        >
-                          View Projects →
-                        </button>
+                      <button type="submit" className="bg-white border border-amber-600 text-amber-600 hover:bg-amber-50 disabled:border-gray-300 disabled:text-gray-400 disabled:bg-white font-semibold py-1 px-2 rounded-lg transition-colors duration-200 flex items-center justify-center space-x-2">
+                        View Project →
+                      </button>
                         </div> 
                         </div> 
                         </div>
