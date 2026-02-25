@@ -11,7 +11,8 @@ export default function Portfolio() {
   const [galleryImages, setGalleryImages] = useState<string[]>([]);
   const openModal = () => setShowModal(true);
   const closeModal = () => setShowModal(false);
-
+  console.log('portfolioItems', portfolioItems);
+  console.log('galleryImages', galleryImages);
   return (
     <section id="portfolio" className="section-padding bg-white">
       <div className="max-w-7xl mx-auto">
@@ -82,7 +83,7 @@ export default function Portfolio() {
               Portfolio Gallery
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-              {galleryImages.map((img,index) => (
+              {galleryImages?.map((img,index) => (
                 <div key={index} className="aspect-w-4 aspect-h-3 relative">
                   <Image
                     src={img}
