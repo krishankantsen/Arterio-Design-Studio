@@ -85,10 +85,9 @@ export default function Portfolio() {
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {galleryImages?.map((img,index) => (
                 <div key={index} className="aspect-w-4 aspect-h-3 relative">
-                  <Image
+                  <img
                     src={img}
                     alt={`Gallery Image ${index + 1}`}
-                    fill
                     className="object-cover rounded"
                   />
                 </div>
