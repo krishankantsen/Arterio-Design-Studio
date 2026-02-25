@@ -34,7 +34,7 @@ export default function Navigation() {
             href="/"
             className="text-2xl font-bold text-gradient"
           >
-            Arterio Bim Solution
+            ARTERIO BIM SOLUTION
           </Link>
 
           {/* Desktop Navigation */}
