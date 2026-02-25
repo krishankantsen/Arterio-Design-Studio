@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-gradient">
-              Arterio Design Studio
+              Arterio Bim Solution
             </h3>
             <p className="text-gray-400 leading-relaxed">
               Creating beautiful, functional spaces that enhance your lifestyle
@@ -87,7 +87,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-gray-400">
-            © {currentYear} Arterio Design Studio. All rights reserved.
+            © {currentYear} Arterio Bim Solution. All rights reserved.
           </p>
         </div>
       </div>

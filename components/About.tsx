@@ -25,11 +25,11 @@ export default function About() {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-              About Arterio Design Studio
+              About Arterio Bim Solution
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               Founded with a passion for creating beautiful, functional spaces,
-              Arterio Design Studio has been transforming homes and commercial
+              Arterio Bim Solution has been transforming homes and commercial
               spaces for over 4 years. We believe that great design has the
               power to improve lives and create lasting memories.
             </p>

@@ -74,7 +74,7 @@ export default function Hero({ images }: HeroProps) {
           </h1>
 
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-200">
-            At Arterio Design Studio, we create stunning, functional interiors
+            At Arterio Bim Solution, we create stunning, functional interiors
             that reflect your unique style and enhance your lifestyle.
           </p>
 

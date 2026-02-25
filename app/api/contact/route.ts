@@ -64,7 +64,7 @@ export async function POST(request: NextRequest) {
         </div>
 
         <p style="color: #666; font-size: 14px;">
-          This email was sent from the Arterio Design Studio contact form.
+          This email was sent from the Arterio Bim Solution contact form.
         </p>
       </div>
     `;

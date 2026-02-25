@@ -1,4 +1,4 @@
-# Arterio-Design-Studio
+# Arterio Bim Solution
 
 This project uses a Next.js API route to handle contact form submissions. To enable email notifications via SMTP, set the following environment variables in your `.env` file or hosting provider:
 
@@ -9,7 +9,7 @@ EMAIL_PORT=587
 EMAIL_SECURE=false        # true for port 465
 EMAIL_USER=your_smtp_user
 EMAIL_PASS=your_smtp_password
-EMAIL_FROM="Arterio Design Studio <no-reply@yourdomain.com>"  # optional
+EMAIL_FROM="Arterio Bim Solution <no-reply@yourdomain.com>"  # optional
 EMAIL_TO=dshivam111213@gmail.com  # destination address
 ```
 

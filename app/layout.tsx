@@ -7,8 +7,8 @@ import Footer from '@/components/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Arterio Design Studio | Premium Interior Design Services',
-  description: 'Transform your space with Arterio Design Studio. We create stunning, functional interiors that reflect your unique style and enhance your lifestyle.',
+  title: 'Arterio Bim Solution',
+  description: 'Transform your space with Arterio Bim Solution. We create stunning, functional interiors that reflect your unique style and enhance your lifestyle.',
   keywords: 'interior design, home design, commercial design, space planning, interior decoration',
 };
 
