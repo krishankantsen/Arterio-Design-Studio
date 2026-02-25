@@ -38,7 +38,7 @@ export default function Hero({ images }: HeroProps) {
       <div className="absolute inset-0 z-0">
         <Carousel opts={{ loop: true }} className="h-screen w-full">
           <CarouselContent className="h-screen">
-            {carouselImages.map((src, idx) => (
+            {carouselImages && carouselImages.map((src, idx) => (
               <CarouselItem key={idx} className="h-screen">
                 {/* IMPORTANT: give slide real height */}
                 <div className="relative h-screen w-full">
