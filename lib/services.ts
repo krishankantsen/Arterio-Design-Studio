@@ -143,6 +143,17 @@ export const portfolioItems = [
     title: 'Revit Modeling',
     category: 'Commercial',
     image: 'https://www.elogictech.com/blog/wp-content/uploads/2025/05/1715863607_BIMRevit.jpg',
+    images:[
+      "https://select-teal-p31cnm7zma.edgeone.app/1.jpg",
+      "https://select-teal-p31cnm7zma.edgeone.app/2.jpg",
+      "https://select-teal-p31cnm7zma.edgeone.app/3.jpg",
+      "https://select-teal-p31cnm7zma.edgeone.app/4.jpeg",
+      "https://select-teal-p31cnm7zma.edgeone.app/5.jpeg",
+      "https://select-teal-p31cnm7zma.edgeone.app/6.jpeg",
+      "https://select-teal-p31cnm7zma.edgeone.app/7.jpeg",
+      "https://select-teal-p31cnm7zma.edgeone.app/8.jpeg",
+
+    ]
   },
   {
     id: 4,
@@ -152,7 +163,7 @@ export const portfolioItems = [
   },
   {
     id: 5,
-    title: 'Boutique Hotel Lobby',
+    title: 'Commercial Building',
     category: 'Commercial',
     image: 'https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg',
   },
