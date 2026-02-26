@@ -137,6 +137,19 @@ export const portfolioItems = [
     title: 'Scan To Bim Modeling',
     category: 'Commercial',
     image: 'https://blog.novatr.com/hs-fs/hubfs/bim-scan.jpg?width=1602&height=856&name=bim-scan.jpg',
+      images:[
+        "https://square-blush-tmzmq1brfm.edgeone.app/1.png",
+        "https://square-blush-tmzmq1brfm.edgeone.app/2.png",
+        "https://square-blush-tmzmq1brfm.edgeone.app/3.jpg",
+        "https://square-blush-tmzmq1brfm.edgeone.app/4.jpg",
+        "https://square-blush-tmzmq1brfm.edgeone.app/5.jpeg",
+        "https://square-blush-tmzmq1brfm.edgeone.app/6.jpeg",
+        "https://square-blush-tmzmq1brfm.edgeone.app/7.jpeg",
+        "https://square-blush-tmzmq1brfm.edgeone.app/8.jpeg",
+        "https://square-blush-tmzmq1brfm.edgeone.app/9.jpeg",
+      ]
+
+
   },
   {
     id: 3,
