@@ -164,6 +164,7 @@ export const portfolioItems = [
         "https://square-blush-tmzmq1brfm.edgeone.app/7.jpeg",
         "https://square-blush-tmzmq1brfm.edgeone.app/8.jpeg",
         "https://square-blush-tmzmq1brfm.edgeone.app/9.jpeg",
+        "https://unemployed-amber-p560knomye.edgeone.app/Screenshot_6.png"
       ]
 
 
@@ -199,6 +200,31 @@ export const portfolioItems = [
     title: 'Commercial Building',
     category: 'Commercial',
     image: 'https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg',
+    images:[
+      "https://vertical-black-ujknw8l5lu.edgeone.app/1.png",
+      "https://vertical-black-ujknw8l5lu.edgeone.app/2.png",
+      "https://vertical-black-ujknw8l5lu.edgeone.app/3.png",
+      "https://vertical-black-ujknw8l5lu.edgeone.app/4.png",
+      "https://vertical-black-ujknw8l5lu.edgeone.app/5.png",
+      "https://vertical-black-ujknw8l5lu.edgeone.app/6.png",
+      "https://vertical-black-ujknw8l5lu.edgeone.app/7.png",
+      "https://vertical-black-ujknw8l5lu.edgeone.app/8.png",
+      "https://vertical-black-ujknw8l5lu.edgeone.app/9.png",
+      "https://vertical-black-ujknw8l5lu.edgeone.app/10.png",
+      "https://vertical-black-ujknw8l5lu.edgeone.app/11.png",
+      "https://vertical-black-ujknw8l5lu.edgeone.app/12.png",
+      "https://vertical-black-ujknw8l5lu.edgeone.app/13.png",
+      "https://vertical-black-ujknw8l5lu.edgeone.app/14.png",
+      "https://vertical-black-ujknw8l5lu.edgeone.app/15.png",
+      "https://vertical-black-ujknw8l5lu.edgeone.app/16.png",
+      "https://vertical-black-ujknw8l5lu.edgeone.app/17.png",
+      "https://vertical-black-ujknw8l5lu.edgeone.app/18.png",
+      "https://vertical-black-ujknw8l5lu.edgeone.app/19.png",
+      "https://vertical-black-ujknw8l5lu.edgeone.app/20.png",
+      "https://vertical-black-ujknw8l5lu.edgeone.app/21.png",
+      "https://vertical-black-ujknw8l5lu.edgeone.app/22.png",
+      "https://vertical-black-ujknw8l5lu.edgeone.app/23.png"
+    ]
   },
   {
     id: 6,

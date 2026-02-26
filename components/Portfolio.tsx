@@ -174,7 +174,7 @@ export default function Portfolio() {
                       alt="Gallery Image"
                       fill
                       priority
-                      className="object-cover"
+                      className="object-contain"
                     />
                   </motion.div>
                 </AnimatePresence>
