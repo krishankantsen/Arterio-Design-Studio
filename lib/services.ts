@@ -1,4 +1,4 @@
-import { Home, Palette, Layout, Lightbulb, Sofa, Building2 ,type LucideIcon} from 'lucide-react';
+import { Home, Palette, Layout, Lightbulb, Sofa, Building2 ,type LucideIcon, HardHat, Wrench, Scan, Network, Cuboid} from 'lucide-react';
 
 export interface Service {
   slug: string;
