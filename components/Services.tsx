@@ -36,7 +36,7 @@ export default function Services() {
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: index * 0.1 }}
-                className="bg-white rounded-lg p-8 shadow-lg hover-lift"
+                className="bg-white rounded-lg p-8 shadow-lg hover-lift  h-[650px]"
               >
                 {/* thumbnail image */}
                 <div className="relative h-40 w-full mb-6 overflow-hidden rounded-md">

@@ -14,8 +14,8 @@ export default function Footer() {
               Arterio Bim Solution
             </h3>
             <p className="text-gray-400 leading-relaxed">
-              Creating beautiful, functional spaces that enhance your lifestyle
-              and reflect your unique personality.
+              Delivering precision-driven BIM and digital engineering solutions for industrial, commercial, and infrastructure projects worldwide.
+We specialize in Scan to BIM, LOD 350 modeling, and multidisciplinary coordination aligned with global project standards..
             </p>
             <div className="flex space-x-4">
               <Link href="https://www.instagram.com/arterio_design_studio" className="text-gray-400 hover:text-amber-600 transition-colors">
@@ -49,12 +49,12 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Our Services</h4>
             <ul className="space-y-2">
               {[
-                'Residential Design',
-                'Commercial Design',
-                'Space Planning',
-                'Color Consultation',
-                'Furniture Selection',
-                'Lighting Design',
+                'Architectural BIM Modeling',
+                'Structural BIM & Steel Detailing',
+                'MEP BIM Coordination',
+                'Scan to BIM Conversion',
+                'LOD 300 / LOD 350 Development',
+                '4D & 5D BIM Integration',
               ].map((service) => (
                 <li key={service}>
                   <span className="text-gray-400">{service}</span>

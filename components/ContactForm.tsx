@@ -150,7 +150,7 @@ export default function ContactForm() {
 
         <div>
           <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-            Project Details *
+            Kindly share project scope, required LOD, applicable standards (ISO / AIA / BS / etc.), timeline, and deliverables. *
           </label>
           <textarea
             id="message"

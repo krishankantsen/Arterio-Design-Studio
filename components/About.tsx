@@ -25,19 +25,19 @@ export default function About() {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-              About Arterio Bim Solution
+              About Arterio BIM Solution
+
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Founded with a passion for creating beautiful, functional spaces,
-              Arterio Bim Solution has been transforming homes and commercial
-              spaces for over 4 years. We believe that great design has the
-              power to improve lives and create lasting memories.
+              
+Arterio BIM Solution delivers precise, construction-ready BIM services for industrial and commercial projects. With 4+ years of expertise in Scan to BIM, Revit modeling, and LOD 350 development, we transform complex project data into highly detailed, coordinated, and execution-ready BIM models.
+
+
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Our team of experienced designers works closely with each client
-              to understand their unique needs, preferences, and lifestyle. We
-              combine creativity with functionality to deliver spaces that are
-              not only beautiful but also practical and sustainable.
+              Our dedicated team of BIM specialists, modelers, and coordination experts combines technical excellence with industry best practices to ensure accuracy, efficiency, and seamless project delivery. We focus on minimizing rework, optimizing workflows, and creating dependable digital models that add real value to every project.
+
+
             </p>
             
             <div className="grid grid-cols-2 gap-8">
@@ -67,15 +67,15 @@ export default function About() {
           >
             <div className="relative h-96 lg:h-[500px] rounded-lg overflow-hidden">
               <Image
-                src="https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg"
+                src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcG2jgLcqkq21QbDwjqI8EH1MDcesbw-aCvEC7t-SeNvStqGpqPGcES1TLF7n-ZrYMEaTgFAIbaHAVJBiaiMyJzRLuSn3-LFjo1IL51SvYdBj-MSyEZJiNNh92H-x6kS8vT9Q7tdQ?key=aB4B7SIqPQiNZ-y0hqzuMOlj"
                 alt="Interior Design Team"
                 fill
                 className="object-cover"
               />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-amber-600 text-white p-6 rounded-lg shadow-xl">
-              <div className="text-2xl font-bold">Excellence</div>
-              <div className="text-amber-100">in Every Detail</div>
+              <div className="text-2xl font-bold">Engineered for Precision.</div>
+              <div className="text-amber-100">Built by Experts.</div>
             </div>
           </motion.div>
         </div>
@@ -83,3 +83,4 @@ export default function About() {
     </section>
   );
 }
+

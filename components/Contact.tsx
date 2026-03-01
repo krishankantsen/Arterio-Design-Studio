@@ -27,7 +27,7 @@ const contactInfo = [
   {
     icon: Clock,
     title: 'Business Hours',
-    info: 'Mon - Fri: 10AM - 8PM',
+    info: 'Mon - Fri: 10AM - 8PM (Global coordination available upon request)',
     link: '#',
   },
 ];
@@ -49,8 +49,7 @@ export default function Contact() {
             Get In Touch
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to transform your space? Contact us for a consultation and
-            let's discuss how we can bring your vision to life.
+            Connect with our team to discuss your scope, technical requirements, and delivery expectations. We provide reliable, standards-compliant BIM services tailored to global project demands.
           </p>
         </motion.div>
 
