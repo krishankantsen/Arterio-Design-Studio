@@ -69,13 +69,12 @@ export default function Hero({ images }: HeroProps) {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Transform Your
-            <span className="block text-amber-500">Living Space</span>
+            Smart BIM Solutions
+            <span className="block text-amber-500">for Complex Industrial Projects</span>
           </h1>
 
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-200">
-            At Arterio Bim Solution, we create stunning, functional interiors
-            that reflect your unique style and enhance your lifestyle.
+            At Arterio Bim Solution, We transform laser scan data into intelligent BIM models, enabling better planning, retrofitting, and facility management..
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -83,14 +82,14 @@ export default function Hero({ images }: HeroProps) {
               href="#portfolio"
               className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 text-lg"
             >
-              View Our Work
+              Explore Our Work
             </Link>
 
             <Link
               href="#contact"
               className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-lg font-semibold transition-all duration-200 text-lg"
             >
-              Get Consultation
+              Schedule a Consultation
             </Link>
           </div>
         </motion.div>

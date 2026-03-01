@@ -9,118 +9,108 @@ export interface Service {
   image: string;
 }
 
-/**
- * Extended service content
- * - Descriptions are intentionally longer for better UI balance
- * - Copy is marketing friendly but still professional
- */
+
 export const services: Service[] = [
   {
-    slug: 'residential-design',
-    icon: Home,
-    title: 'Residential Design',
-    description:
-      'Our residential design service transforms houses into deeply personal living environments. We analyze your lifestyle, habits, and aesthetic preferences to craft interiors that feel natural, comfortable, and timeless. From concept development and mood boards to final styling and installation, every detail is carefully curated to create spaces that reflect who you are and how you live.',
-    features: [
-      'Space Planning',
-      'Color Consultation',
-      'Furniture Selection',
-      'Custom Solutions',
-      'Material & Finish Selection',
-      '3D Design Concepts',
-    ],
-    image:
-      'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-  },
-
-  {
-    slug: 'commercial-design',
+    slug: 'architectural-bim-modeling',
     icon: Building2,
-    title: 'Commercial Design',
+    title: 'Architectural BIM Modeling',
     description:
-      'We design commercial environments that elevate brand identity, enhance productivity, and create memorable customer experiences. Our process blends functionality, aesthetics, and brand storytelling to produce workspaces, retail environments, and hospitality interiors that inspire both employees and visitors.',
+      'We create highly detailed architectural BIM models that support design, documentation, and construction workflows. Our models ensure accuracy, coordination, and smooth collaboration across project teams from concept to construction.',
     features: [
-      'Office Design',
-      'Retail Spaces',
-      'Hospitality Interiors',
-      'Brand Integration',
-      'Workspace Optimization',
-      'Client Experience Design',
+      'Detailed Architectural 3D Modeling',
+      'LOD 300 & LOD 350 Development',
+      'Floor Plans, Sections & Elevations',
+      'Interior & Exterior BIM Documentation',
+      'As-Built Modeling',
+      'Construction Drawing Extraction',
     ],
-    image:
-      'https://images.pexels.com/photos/1571461/pexels-photo-1571461.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e',
   },
 
   {
-    slug: 'space-planning',
-    icon: Layout,
-    title: 'Space Planning',
+    slug: 'structural-bim-modeling',
+    icon: HardHat,
+    title: 'Structural BIM Modeling',
     description:
-      'Smart space planning is the foundation of every successful interior. We study how people move, interact, and use each area to create layouts that feel intuitive and efficient. Through detailed floor plans and 3D visualization, we ensure every square foot works harder while maintaining visual harmony and comfort.',
+      'Our structural BIM solutions provide precise modeling for steel and concrete structures, enabling fabrication-ready documentation and improved construction accuracy.',
     features: [
-      'Detailed Floor Plans',
-      'Traffic Flow Optimization',
-      'Functional Zoning',
-      '3D Visualization',
-      'Furniture Layouts',
-      'Ergonomic Planning',
+      'Structural Steel Modeling',
+      'RCC & Concrete Modeling',
+      'Rebar Detailing',
+      'Shop Drawing Preparation',
+      'Connection Detailing (LOD 350)',
+      'Fabrication-Level Documentation',
     ],
-    image:
-      'https://redress.co.za/wp-content/uploads/2019/03/spaceplanning.jpg',
+    image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789',
   },
 
   {
-    slug: 'color-consultation',
-    icon: Palette,
-    title: 'Color Consultation',
+    slug: 'mep-bim-services',
+    icon: Wrench,
+    title: 'MEP BIM Services',
     description:
-      'Color has the power to shape mood, perception, and atmosphere. Our experts help you select harmonious palettes that enhance architecture, lighting, and materials. Whether bold and expressive or calm and neutral, we craft color schemes that create cohesive and emotionally engaging environments.',
+      'We deliver coordinated MEP BIM models that eliminate clashes, improve efficiency, and support seamless construction and facility operations.',
     features: [
-      'Color Psychology',
-      'Paint & Finish Selection',
-      'Fabric Coordination',
-      'Lighting Interaction',
-      'Palette Development',
-      'Accent Strategy',
+      'HVAC Modeling & Coordination',
+      'Plumbing & Firefighting Modeling',
+      'Electrical & Cable Tray Modeling',
+      'Clash Detection & Resolution',
+      'MEP Shop Drawings',
+      'Coordination Drawings',
     ],
-    image:
-      'https://images.pexels.com/photos/139764/pexels-photo-139764.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    image: 'https://images.unsplash.com/photo-1581093458791-9d42e4c9fdb5',
   },
 
   {
-    slug: 'furniture-selection',
-    icon: Sofa,
-    title: 'Furniture Selection',
+    slug: 'scan-to-bim-services',
+    icon: Scan,
+    title: 'Scan to BIM Services',
     description:
-      'We curate furniture and décor that balance beauty, comfort, and durability. By sourcing from trusted manufacturers and artisans, we ensure each piece complements the overall design vision while meeting functional needs. The result is a cohesive, stylish interior with character and longevity.',
+      'We convert point cloud data into accurate BIM models for renovation, retrofit, and facility documentation, ensuring real-world conditions are captured precisely.',
     features: [
-      'Custom Furniture Design',
-      'Vendor Sourcing',
-      'Styling & Accessories',
-      'Delivery & Installation',
-      'Material & Upholstery Selection',
-      'Budget Planning',
+      'Point Cloud to BIM Conversion',
+      'Existing Condition Modeling',
+      'Retrofit & Renovation BIM',
+      'Industrial Plant Modeling',
+      'Equipment & Piping Modeling',
+      'As-Built Documentation',
     ],
-    image:
-      'https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    image: 'https://images.unsplash.com/photo-1581093588401-22f65c1c9a1c',
   },
 
   {
-    slug: 'lighting-design',
-    icon: Lightbulb,
-    title: 'Lighting Design',
+    slug: 'bim-coordination-management',
+    icon: Network,
+    title: 'BIM Coordination & Management',
     description:
-      'Lighting shapes how a space looks, feels, and functions. We design layered lighting systems that combine natural, ambient, task, and accent lighting to create depth and flexibility. Our approach enhances atmosphere while improving usability and energy efficiency.',
+      'Our coordination and BIM management services ensure all disciplines work together seamlessly, reducing risks and improving project efficiency.',
     features: [
-      'Natural Light Optimization',
-      'Ambient Lighting Design',
-      'Task & Accent Lighting',
-      'Smart Lighting Controls',
-      'Fixture Selection',
-      'Energy Efficient Planning',
+      'Clash Detection (Navisworks)',
+      'BIM Execution Plan (BEP) Support',
+      'Model Validation & Quality Checks',
+      'Interdisciplinary Coordination',
+      '4D Construction Sequencing',
+      '5D Quantity Take-Off',
     ],
-    image:
-      'https://media.designcafe.com/wp-content/uploads/2019/11/17054916/latest-designs-for-boutique-lighting-1.jpg',
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd',
+  },
+
+  {
+    slug: 'revit-advanced-bim-support',
+    icon: Cuboid,
+    title: 'Revit & Advanced BIM Support',
+    description:
+      'We provide advanced Revit and BIM support to standardize workflows, develop parametric content, and deliver data-rich models for long-term facility management.',
+    features: [
+      'Revit Family Creation',
+      'Parametric Component Development',
+      'LOD 350 Detailed Modeling',
+      'Custom BIM Standards Setup',
+      'Data-Rich Model Integration',
+      'Facility Management (FM) Ready Models',
+    ],
+    image: 'https://images.unsplash.com/photo-1556155092-490a1ba16284',
   },
 ];
 

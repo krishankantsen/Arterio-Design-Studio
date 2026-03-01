@@ -25,8 +25,7 @@ export default function Services() {
             Our Services
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We offer comprehensive interior design services to transform your
-            space into something extraordinary.
+            We provide comprehensive BIM solutions to enhance accuracy, coordination, and construction efficiency across industrial, commercial, and infrastructure projects.
           </p>
         </motion.div>
 
