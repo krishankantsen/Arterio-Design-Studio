@@ -20,6 +20,7 @@ const config: Config = {
         sm: 'calc(var(--radius) - 4px)',
       },
       colors: {
+        // Light mode colors
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
@@ -53,6 +54,8 @@ const config: Config = {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
+
+        // Chart colors
         chart: {
           '1': 'hsl(var(--chart-1))',
           '2': 'hsl(var(--chart-2))',
@@ -60,6 +63,12 @@ const config: Config = {
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))',
         },
+
+        // Theme accent colors
+        gold: '#d4af37',
+        'gold-dark': '#b8860b',
+        'warm-light': '#f5f5f5',
+        'warm-beige': '#e8e2d8',
       },
       keyframes: {
         'accordion-down': {

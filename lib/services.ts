@@ -95,8 +95,8 @@ export const services: Service[] = [
     ],
     image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd',
   },
-
-  {
+  { slug: 'residential-design', icon: Home, title: 'Residential Design', description: 'Our residential design service transforms houses into deeply personal living environments. We analyze your lifestyle, habits, and aesthetic preferences to craft interiors that feel natural, comfortable, and timeless. From concept development and mood boards to final styling and installation, every detail is carefully curated to create spaces that reflect who you are and how you live.', features: [ 'Space Planning', 'Color Consultation', 'Furniture Selection', 'Custom Solutions', 'Material & Finish Selection', '3D Design Concepts', ], image: 'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', }, { slug: 'commercial-design', icon: Building2, title: 'Commercial Design', description: 'We design commercial environments that elevate brand identity, enhance productivity, and create memorable customer experiences. Our process blends functionality, aesthetics, and brand storytelling to produce workspaces, retail environments, and hospitality interiors that inspire both employees and visitors.', features: [ 'Office Design', 'Retail Spaces', 'Hospitality Interiors', 'Brand Integration', 'Workspace Optimization', 'Client Experience Design', ], image: 'https://images.pexels.com/photos/1571461/pexels-photo-1571461.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', }
+  ,{
     slug: 'revit-advanced-bim-support',
     icon: Cuboid,
     title: 'Revit & Advanced BIM Support',
