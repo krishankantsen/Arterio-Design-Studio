@@ -164,7 +164,7 @@ export const portfolioItems = [
     id: 3,
     title: 'Revit Modeling',
     category: 'Commercial',
-    image: 'https://www.elogictech.com/blog/wp-content/uploads/2025/05/1715863607_BIMRevit.jpg',
+    image: 'https://www.cadtobim.com/uploads/2/5/9/5/25955631/revit-mep-01_orig.png',
     images: [
       "https://ridiculous-harlequin-idgxyicvnc.edgeone.app/1.jpg",
       "https://ridiculous-harlequin-idgxyicvnc.edgeone.app/2.jpg",
