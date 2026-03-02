@@ -18,10 +18,10 @@ export default function Footer() {
 We specialize in Scan to BIM, LOD 350 modeling, and multidisciplinary coordination aligned with global project standards..
             </p>
             <div className="flex space-x-4">
-              <Link href="https://www.instagram.com/arterio_design_studio" className="text-gray-400 hover:text-amber-600 transition-colors">
+              <Link href="" className="text-gray-400 hover:text-amber-600 transition-colors">
                 <Instagram size={24} />
               </Link>
-              <Link href="https://www.linkedin.com/company/arteriodesignstudio/" className="text-gray-400 hover:text-amber-600 transition-colors">
+              <Link href="" className="text-gray-400 hover:text-amber-600 transition-colors">
                 <Linkedin size={24} />
               </Link>
             </div>
