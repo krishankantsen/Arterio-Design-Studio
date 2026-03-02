@@ -72,7 +72,7 @@ export async function POST(request: NextRequest) {
     // send mail with defined transport object
     const mailOptions = {
       from: process.env.EMAIL_FROM || email,
-      to: process.env.EMAIL_TO || 'dshivam111213@gmail.com',
+      to: process.env.EMAIL_TO || 'arteriobimsolution@gmail.com',
       subject: `New Contact Form Submission from ${name}`,
       html: htmlBody,
     };

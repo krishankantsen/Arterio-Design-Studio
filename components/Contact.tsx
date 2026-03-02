@@ -15,8 +15,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: 'Email',
-    info: 'dshivam111213@gmail.com',
-    link: 'mailto:dshivam111213@gmail.com',
+    info: 'arteriobimsolution@gmail.com',
+    link: 'mailto:arteriobimsolution@gmail.com',
   },
   {
     icon: MapPin,

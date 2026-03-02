@@ -79,7 +79,7 @@ We specialize in Scan to BIM, LOD 350 modeling, and multidisciplinary coordinati
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-amber-600" />
-                <span className="text-gray-400">dshivam111213@gmail.com</span>
+                <span className="text-gray-400">arteriobimsolution@gmail.com</span>
               </div>
             </div>
           </div>
